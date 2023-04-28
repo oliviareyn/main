@@ -14,7 +14,7 @@ def enter_data():
             numCourses = courses_spinbox.get()
             numPeriods = gradingperiods_spinbox.get()
             registrationStatus = registered_check_var.get()
-            print("title: ", title, "First Name: ", firstname, "Last Name: ", lastname, "Age: ", age, "Nationality: ", nationality, "Number of Courses: ", numCourses, "Number of Grading Periods: ", numPeriods, "Registration Status: ", registrationStatus)
+            print("Title: ", title, "First Name: ", firstname, "Last Name: ", lastname, "Age: ", age, "Nationality: ", nationality, "Number of Courses: ", numCourses, "Number of Grading Periods: ", numPeriods, "Registration Status: ", registrationStatus)
         else: 
             tkinter.messagebox.showwarning(title = "Error", message = "You have not entered your first and last name.")
     else: tkinter.messagebox.showwarning(title = "Error",  message = "You have not accepted the terms." )
