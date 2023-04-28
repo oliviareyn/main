@@ -92,11 +92,12 @@ for widget in courses_frame.winfo_children():
 #T&C
 terms_frame = tkinter.LabelFrame(frame, text = "Terms & Conditions")
 terms_frame.grid(row = 2, column = 0, sticky = "news", padx = 20, pady = 10)
+accept_var = tkinter.Stringvar(value = "Not Accepted")
 terms_check = tkinter.Checkbutton(terms_frame, text = "I accept the terms and conditions.")
 terms_check.grid(row = 0, column = 0)
 
 #Button
-button = tkinter.Button(frame, text = "Enter data")
+button = tkinter.Button(frame, text = "Enter data", command = enter_data)
 button.grid(row = 3, column = 0, sticky = "news", padx = 20, pady = 10)
 
 window.mainloop() 
