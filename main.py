@@ -2,6 +2,7 @@ import tkinter
 from tkinter import ttk
 from tkinter import messagebox
 
+
 def enter_data():
     accepted = accept_var
     if accepted == "Accepted":
@@ -15,6 +16,8 @@ def enter_data():
             numPeriods = gradingperiods_spinbox.get()
             registrationStatus = registered_check_var.get()
             print("Title: ", title, "First Name: ", firstname, "Last Name: ", lastname, "Age: ", age, "Nationality: ", nationality, "Number of Courses: ", numCourses, "Number of Grading Periods: ", numPeriods, "Registration Status: ", registrationStatus)
+        
+
         else: 
             tkinter.messagebox.showwarning(title = "Error", message = "You have not entered your first and last name.")
     else: tkinter.messagebox.showwarning(title = "Error",  message = "You have not accepted the terms." )
