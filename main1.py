@@ -23,8 +23,6 @@ def enter_data():
             print("Title: ", title, "First name: ", firstname, "Last name: ", lastname, "Age: ", age, "Nationality: ", nationality, "Number of courses: ", courses, "Number of Semesters: ", Semesters, "Registration Status: ", registration_status)
             print("---------------------------------------------------------------------------")
 
-            filepath = (r"C:")
-
             if not os.path.exists(filepath):
                 workbook = openpyxl.Workbook()
                 sheet = workbook.active
