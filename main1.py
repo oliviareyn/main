@@ -93,8 +93,8 @@ courses_spinbox.grid(row = 1, column = 1)
 
 semesters_label = tkinter.Label(courses_frame, text = "# Semesters")
 semesters_spinbox = tkinter.Spinbox(courses_frame, from_=0, to=10)
-Semesters_label.grid(row = 0, column = 2)
-Semesters_spinbox.grid(row = 1, column = 2)
+semesters_label.grid(row = 0, column = 2)
+semesters_spinbox.grid(row = 1, column = 2)
 
 for widget in courses_frame.winfo_children():
     widget.grid_configure(padx = 10, pady = 5)
